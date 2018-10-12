@@ -12,8 +12,19 @@ Extracted from https://github.com/jonase/kibit, which introduced this functional
 
 If you want to be able to read a file containing namespace aliased keywords, map namespace syntax or [namespaced map binding destructuring](https://clojure.org/reference/special_forms#_map_binding_destructuring).
 
-Resolving namespace aliases at read time requires an alias map, which 
+#### Example:
 
+```clojure
+(ns keyword-namespace-test
+  (:require [clojure.string :as string]))
+
+::string/test
+
+(let [m #::string{:key1 "val"
+                  :key2 "other val"}
+      {::string/keys [key1 key2]} m]
+  [key1 key2])
+```
 
 ## Usage
 
