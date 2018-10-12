@@ -20,5 +20,5 @@
   (is (reader/read-file
        (-> "test-resources/keyword_namespace_test.clj"
            io/reader
-           LineNumberingPushbackReader)
+           LineNumberingPushbackReader.)
        'user)))
