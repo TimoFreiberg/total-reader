@@ -1,5 +1,10 @@
 # total-reader
 
+`[total-reader "1.0.0"]`
+
+[![Clojars Project](https://img.shields.io/clojars/v/total-reader.svg)](https://clojars.org/total-reader)
+[![Build Status](https://travis-ci.org/TimoFreiberg/total-reader.svg?branch=master)](https://travis-ci.org/TimoFreiberg/total-reader)
+
 A clojure reader which can read keywords with namespace aliases.
 
 It should be able to read all idiomatic clojure files.
