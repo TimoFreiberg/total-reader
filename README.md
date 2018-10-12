@@ -8,7 +8,7 @@ Built on top of [org.clojure/tools.reader](https://github.com/clojure/tools.read
 
 Extracted from https://github.com/jonase/kibit, which introduced this functionality to fix https://github.com/jonase/kibit/issues/14
 
-## Why choose this over tools.reader?
+## Why use this library?
 
 If you want to be able to read a file containing namespace aliased keywords, map namespace syntax or [namespaced map binding destructuring](https://clojure.org/reference/special_forms#_map_binding_destructuring).
 
