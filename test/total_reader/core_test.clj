@@ -17,8 +17,8 @@
     '{pprint clojure.pprint} '(alias 'pprint 'clojure.pprint)))
 
 (deftest read-file-test
-  (is (reader/read-file (-> "test/resources/keyword_namespace_test.clj"
-                            io/file
-                            io/reader
-                            LineNumberingPushbackReader.)
-                        'user)))
+  (is (reader/read-file
+       (-> "test-resources/keyword_namespace_test.clj"
+           io/reader
+           LineNumberingPushbackReader)
+       'user)))
