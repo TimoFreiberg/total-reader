@@ -24,11 +24,20 @@ If you want to be able to read a file containing namespace aliased keywords, map
                   :key2 "other val"}
       {::string/keys [key1 key2]} m]
   [key1 key2])
+  
 ```
 
 ## Usage
 
-See https://github.com/clojure/tools.reader#example-usage
+```clojure
+(require 'total-reader.core :as reader)
+
+(reader/read-file
+ (-> "path/to/file.clj"
+     io/reader
+     LineNumberingPushbackReader.)
+ 'user)
+```
 
 ## License
 
