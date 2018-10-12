@@ -16,8 +16,8 @@ Extracted from https://github.com/jonase/kibit, which introduced this functional
 ## Why use this library?
 
 If you want to be able to read a file containing namespace aliased keywords, map namespace syntax or [namespaced map binding destructuring](https://clojure.org/reference/special_forms#_map_binding_destructuring).
-Example file containing these features:
 
+#### Example file containing these features:
 ```clojure
 (ns keyword-namespace-test
   (:require [clojure.string :as string]))
