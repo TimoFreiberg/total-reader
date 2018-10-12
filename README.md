@@ -16,20 +16,21 @@ Extracted from https://github.com/jonase/kibit, which introduced this functional
 ## Why use this library?
 
 If you want to be able to read a file containing namespace aliased keywords, map namespace syntax or [namespaced map binding destructuring](https://clojure.org/reference/special_forms#_map_binding_destructuring).
-
-#### Example:
+Example file containing these features:
 
 ```clojure
 (ns keyword-namespace-test
   (:require [clojure.string :as string]))
 
+;; namespace aliased keyword
 ::string/test
 
+;; map namespace syntax using an alias
 (let [m #::string{:key1 "val"
                   :key2 "other val"}
+       ;; namespaced map binding destructuring using an alias
       {::string/keys [key1 key2]} m]
   [key1 key2])
-  
 ```
 
 ## Usage
