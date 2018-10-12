@@ -1,4 +1,4 @@
-(defproject total-reader "1.1.0-SNAPSHOT"
+(defproject total-reader "1.0.1"
   :description "A clojure reader that can resolve namespace aliased keywords."
   :url "http://github.com/TimoFreiberg/total-reader"
   :license {:name "Eclipse Public License"
